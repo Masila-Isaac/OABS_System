@@ -1,8 +1,23 @@
 </main>
 
-<footer class="bg-light border-top py-3 mt-auto">
-    <div class="container text-center text-muted small">
-        &copy; <?= date('Y') ?> Co-operative University of Kenya &mdash; Transcripts and Records Office (OABS Prototype)
+<footer class="text-light py-4 mt-auto" style="background: linear-gradient(135deg, #1b3b2f, #0f2419);">
+    <div class="container text-center small">
+        <div class="mb-1">
+            &copy; <?= date('Y') ?> Co-operative University of Kenya &mdash; Transcripts and Records Office
+            <span class="text-success">(OABS Prototype)</span>
+        </div>
+        <div>
+            Built by
+            <a href="https://masila-isaac.github.io/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="text-success text-decoration-none fw-semibold"
+               style="border-bottom: 1px solid transparent; transition: border-color 0.2s ease;"
+               onmouseover="this.style.borderColor='#28a745'"
+               onmouseout="this.style.borderColor='transparent'">
+                Isaac Masila
+            </a>
+        </div>
     </div>
 </footer>
 

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: oabs
+    runtime: docker
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: oabs-db
+          property: connectionString
+
+databases:
+  - name: oabs-db
+    plan: free
